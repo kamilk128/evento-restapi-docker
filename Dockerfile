@@ -1,6 +1,6 @@
 FROM openjdk:latest
 
-RUN if [ -e ".env" ]; then cp .env /.env; fi
+RUN if [ -e ".env" ]; then COPY .env /.env; fi
 
 COPY evento-restapi-0.0.1-SNAPSHOT.jar /app.jar
 
