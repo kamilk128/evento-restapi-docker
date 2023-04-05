@@ -1,6 +1,6 @@
 FROM openjdk:latest
 
-COPY --optional .env /.env
+COPY .env /.env
 
 COPY evento-restapi-0.0.1-SNAPSHOT.jar /app.jar
 
